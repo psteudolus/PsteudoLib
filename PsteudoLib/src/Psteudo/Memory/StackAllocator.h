@@ -1,5 +1,7 @@
 #pragma once
 #include <cstdint>
+#include <cstdlib>
+#include <cassert>
 
 namespace psteudo {
 	namespace memory {
@@ -21,16 +23,16 @@ namespace psteudo {
 			Marker getMarker();
 
 			//frees memory back to the selected marker
-			//
 			void freeToMarker(Marker marker);
 
+			//frees all memory in stack
 			void clear();
 
 		private:
 			char* m_pBuffer;
 			U32 m_bufferSize;
-			U32 m_currentOffset;
-			Marker marker;
+			U32 m_currentSize;
+			Marker m_currentMarker;
 		};
 	}
 }

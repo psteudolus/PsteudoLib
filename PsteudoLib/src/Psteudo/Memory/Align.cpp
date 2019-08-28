@@ -1,7 +1,7 @@
 #include "Align.h"
 namespace psteudo {
 	namespace memory {
-		explicit Align::Align(int value) : m_value(value) {
+		Align::Align(int value) : m_value(value) {
 
 		}
 

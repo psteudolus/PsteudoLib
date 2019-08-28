@@ -1,4 +1,2 @@
 #pragma once
-namespace psteudo {
-	void Print();
-}
+#include "Psteudo/Memory/StackAllocator.h"
