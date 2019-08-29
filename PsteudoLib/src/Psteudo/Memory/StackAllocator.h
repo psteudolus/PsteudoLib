@@ -4,11 +4,12 @@
 #include <cassert>
 
 namespace psteudo {
-	namespace memory {
+	//represents the pointer to the top of the currently allocated stack
+	typedef std::uint64_t Marker;
+
+	namespace mem {
 		class StackAllocator {
 		public:
-			//represents the pointer to the top of the currently allocated stack
-			typedef std::uint32_t Marker;
 
 			//don't want to type std::uint32_t all the time
 			typedef std::uint32_t U32;
@@ -30,9 +31,8 @@ namespace psteudo {
 
 		private:
 			char* m_pBuffer;
-			U32 m_bufferSize;
-			U32 m_currentSize;
 			Marker m_currentMarker;
+			Marker m_maxMarker;
 		};
 	}
 }
