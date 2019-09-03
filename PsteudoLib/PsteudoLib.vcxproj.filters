@@ -24,7 +24,7 @@
     <ClCompile Include="src\Psteudo\Memory\StackAllocator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PoolAllocator.cpp">
+    <ClCompile Include="src\Psteudo\Memory\PoolAllocator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,7 +41,7 @@
     <ClInclude Include="src\Psteudo\Memory\MemoryManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PoolAllocator.h">
+    <ClInclude Include="src\Psteudo\Memory\PoolAllocator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

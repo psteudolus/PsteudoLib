@@ -3,6 +3,7 @@
 
 psteudo::mem::StackAllocator gStackAllocator(256);
 
+
 void* operator new(size_t size) {
 	void* test = gStackAllocator.alloc(size);
 	return test;
@@ -22,6 +23,7 @@ void operator delete[](void* mem) {
 
 int main()
 {
+	/* stack allocator
 	char* a = new char;
 	psteudo::Marker _a = gStackAllocator.getMarker();
 	*a = 1;
@@ -35,5 +37,9 @@ int main()
 	d[1] = 4;
 	d[2] = 4;
 	d[3] = 4;
+	*/
+
+	/*pool allocator*/
+
 	while (true);
 }

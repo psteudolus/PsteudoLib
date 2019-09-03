@@ -30,7 +30,7 @@ namespace psteudo {
 
 		//frees all memory in stack
 		void StackAllocator::clear() {
-			m_currentMarker = (U32)m_pBuffer;
+			m_currentMarker = (Marker)m_pBuffer;
 		}
 	}
 }

@@ -77,13 +77,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="PoolAllocator.cpp" />
+    <ClCompile Include="src\Psteudo\Memory\PoolAllocator.cpp" />
     <ClCompile Include="src\Psteudo\Memory\MemoryManager.cpp" />
     <ClCompile Include="src\Psteudo\Test.cpp" />
     <ClCompile Include="src\Psteudo\Memory\StackAllocator.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PoolAllocator.h" />
+    <ClInclude Include="src\Psteudo\Memory\PoolAllocator.h" />
     <ClInclude Include="src\Psteudo\Memory\MemoryManager.h" />
     <ClInclude Include="src\Psteudo.h" />
     <ClInclude Include="src\Psteudo\Test.h" />
